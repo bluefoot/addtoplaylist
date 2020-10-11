@@ -15,7 +15,7 @@ Currently only m3u static playlists are supported.
 To install, download the code, create a zip file and install from zip file. As
 this addon turns stable, I will consider submitting to the official Kodi repo.
 
-[script.addtoplaylist]: https://github.com/bluefoot/script.addtoplaylist
+Can be found on github script.addtoplaylist: https://github.com/bluefoot/script.addtoplaylist
 
 ## Acknowledgments 
 Development of this addon was highly based on rmrector's playrandomvideos 
