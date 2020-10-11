@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.addtoplaylist" name="Add to Playlist" version="0.0.1" provider-name="gewton">
+	<requires>
+		<import addon="xbmc.addon" version="15.0.0" />
+		<import addon="xbmc.python" version="2.20.0" />
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="kodi.context.item" library="python/context.py">
+		<item>
+			<label>$ADDON[script.addtoplaylist 371100]</label>
+            <visible>!ListItem.IsFolder + !ListItem.IsParentFolder</visible>
+            <visible>true</visible>
+		</item>
+	</extension>
+	<extension point="xbmc.python.library" library="python/script.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Adds selected item to a playlist.</summary>
+		<description lang="en">This add-on can add selected items to a user-defined playlist while you are browsing your library.</description>
+		<platform>all</platform>
+		<source>https://github.com/bluefoot/script.addtoplaylist</source>
+		<license>MIT</license>
+        <forum />
+		<disclaimer />
+		<language />
+		<website />
+		<email />
+	</extension>
+</addon>

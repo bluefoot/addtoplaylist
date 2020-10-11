@@ -1,0 +1,39 @@
+# Kodi Media Center language file
+# Addon Name: Add to Playlist
+# Addon id: script.playrandomvideos
+msgid ""
+msgstr ""
+
+# Commands
+msgctxt "#371100"
+msgid "Add to Playlist"
+msgstr ""
+
+msgctxt "#371101"
+msgid "Remove from playlist"
+msgstr ""
+
+# Headings
+msgctxt "#372010"
+msgid "Select a playlist"
+msgstr ""
+
+msgctxt "#372011"
+msgid "Success!"
+msgstr ""
+
+msgctxt "#372012"
+msgid "New playlist name"
+msgstr ""
+
+# Messages
+# {0} = file label
+# {1} = playlist label
+msgctxt "#372014"
+msgid "Added {0} to {1}"
+msgstr ""
+
+# OTHER
+msgctxt "#372013"
+msgid "Create a new playlist..."
+msgstr ""
