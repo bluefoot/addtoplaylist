@@ -1,2 +1,5 @@
-v0.0.1 (2020-10-11)
+0.1.0 (2020-10-24)
+- Support for skipping duplicated files
+
+0.0.1 (2020-10-11)
 - Initial version

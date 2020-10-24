@@ -46,6 +46,11 @@ class PlaylistService(object):
             file_name += '.m3u'
         new_playlist = Playlist(file = self.NEW_PLAYLIST_BASE_DIR + file_name, label = playlist_name)
         return new_playlist
+    
+    def playlist_contains_file(self, playlist, filename):
+        file_manager = self._get_filemanager_for_playlist_type(playlist)
+        playlist_items = file_manager.load_playlist(playlist.file)
+        return filename in map(lambda item: item.url, playlist_items)
 
     def _check_json_result(self, json_result, result_key, json_request):
         if 'error' in json_result:

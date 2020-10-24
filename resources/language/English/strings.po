@@ -13,6 +13,23 @@ msgctxt "#371101"
 msgid "Remove from playlist"
 msgstr ""
 
+# Settings
+msgctxt "#371102"
+msgid "When adding a file already in the playlist"
+msgstr ""
+
+msgctxt "#371103"
+msgid "Always ask what to do"
+msgstr ""
+
+msgctxt "#371104"
+msgid "Add it to the playlist without asking"
+msgstr ""
+
+msgctxt "#371105"
+msgid "Don't add it to the playlist"
+msgstr ""
+
 # Headings
 msgctxt "#372010"
 msgid "Select a playlist"
@@ -24,6 +41,17 @@ msgstr ""
 
 msgctxt "#372012"
 msgid "New playlist name"
+msgstr ""
+
+msgctxt "#372015"
+msgid "File already in the playlist"
+msgstr ""
+
+# Messages
+# {0} = file label
+# {1} = playlist label
+msgctxt "#372016"
+msgid "{0} is already in {1}. Add it anyway?"
 msgstr ""
 
 # Messages

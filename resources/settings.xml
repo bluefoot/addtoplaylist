@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+    <setting label="371102" type="select" id="duplicateentries" default="0" lvalues="371103|371104|371105" />
+</settings>
