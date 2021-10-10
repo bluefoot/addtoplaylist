@@ -1,8 +1,11 @@
+1.0.1 (2021-10-10)
+- Fix icon not showing up.
+
 1.0.0 (2021-10-09)
-- Support for Kodi 19+ (Python 3)
+- Support for Kodi 19+ (Python 3). Breaks compatibility with previous versions of Kodi.
 
 0.1.0 (2020-10-24)
-- Support for skipping duplicated files
+- Support for skipping duplicated files.
 
 0.0.1 (2020-10-11)
-- Initial version
+- Initial version.

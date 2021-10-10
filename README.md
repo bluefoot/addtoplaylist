@@ -12,18 +12,24 @@ one. The addon will save the playlist by placing the selected video at the end o
 
 Currently only m3u static playlists are supported.
 
-To install, download the code, create a zip file and install from zip file. As
-this addon turns stable, I will consider submitting to the official Kodi repo.
+Can be found on github script.addtoplaylist: https://github.com/bluefoot/script.addtoplaylist.
 
-Can be found on github script.addtoplaylist: https://github.com/bluefoot/script.addtoplaylist
+## Installation
+- Head over to the [latest releases page](https://github.com/bluefoot/addtoplaylist/releases/latest)
+and download the addon package file.
+- In Kodi, select Add-ons > Install from zip file. Browse the previously downloaded
+file and follow the on-screen prompts to install it.
+
+## Build
+Simply zip the contents of the branch. There is a `build.sh` utility that can be used.
 
 ## Acknowledgments 
 Development of this addon was highly based on rmrector's playrandomvideos 
-script: https://github.com/rmrector/script.playrandomvideos/
+script: https://github.com/rmrector/script.playrandomvideos/.
 
 ## Future work
-- Fix bug where context menu is being shown on items other than single playable videos
-- Research and decide if items of a playlist should be saved as absolute system 
-paths or Kodi's file URL notation
-- Add a context menu to allow the user to remove an item from an existing static playlist
-- Support for other types of playlists other than m3u
+- Add a context menu to allow the user to remove an item from an existing static playlist.
+- Fix bug where context menu is being shown on items other than single playable videos.
+- Research and decide if items of a playlist should be saved as absolute system.
+paths or Kodi's file URL notation.
+- Support for other types of playlists other than m3u.
