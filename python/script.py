@@ -3,12 +3,9 @@ This file contains code adapted from
 rmrector's playrandomvideos: https://github.com/rmrector/script.playrandomvideos/
 """
 import addtoplaylist
-import os, sys, traceback
-import xbmc, xbmcaddon
-addon = xbmcaddon.Addon()
-addonpath = xbmc.translatePath(addon.getAddonInfo('path')).decode('utf-8')
-sys.path.append(os.path.join(addonpath, u'python', u'lib'))
-from pykodi import log, get_pathinfo
+import sys
+import xbmc
+from lib.pykodi import log, get_pathinfo
 
 def main():
     if len(sys.argv) < 2:

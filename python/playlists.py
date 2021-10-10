@@ -1,11 +1,7 @@
-import os, sys
 from files import M3uFileManager, PlaylistItem
-import xbmcaddon, xbmc
-addon = xbmcaddon.Addon()
-addonpath = xbmc.translatePath(addon.getAddonInfo('path')).decode('utf-8')
-sys.path.append(os.path.join(addonpath, u'python', u'lib'))
-import pykodi
-from pykodi import log
+import xbmc
+import lib.pykodi as pykodi
+from lib.pykodi import log
 
 class PlaylistService(object):
     NEW_PLAYLIST_BASE_DIR = 'special://profile/playlists/video/'
@@ -30,7 +26,7 @@ class PlaylistService(object):
 
     def get_all_supported_playlists(self):
         all_playlists = self.get_all_playlists()
-        return self._filter_out_unsupported_playlists(all_playlists)
+        return list(self._filter_out_unsupported_playlists(all_playlists))
 
     def add_file_to_playlist(self, playlist, filename_to_add, label):
         file_manager = self._get_filemanager_for_playlist_type(playlist)

@@ -1,12 +1,9 @@
-import os, sys, traceback
-import xbmc, xbmcaddon, xbmcgui
+import traceback
+import xbmc, xbmcgui
 from playlists import PlaylistService, Playlist
 from pre_post_handlers import PrePostHandler
 from translations import TranslationKey
-addon = xbmcaddon.Addon()
-addonpath = xbmc.translatePath(addon.getAddonInfo('path')).decode('utf-8')
-sys.path.append(os.path.join(addonpath, u'python', u'lib'))
-from pykodi import log, localize as L
+from lib.pykodi import log, localize as L
 
 playlist_service = PlaylistService()
 

@@ -1,10 +1,6 @@
-import os, sys
-import xbmc, xbmcaddon, xbmcgui
+import xbmc, xbmcgui
 from playlists import PlaylistService
-addon = xbmcaddon.Addon()
-addonpath = xbmc.translatePath(addon.getAddonInfo('path')).decode('utf-8')
-sys.path.append(os.path.join(addonpath, u'python', u'lib'))
-from pykodi import log, get_main_addon, localize as L
+from lib.pykodi import log, get_main_addon, localize as L
 from translations import TranslationKey
 
 DUPLICATE_ENTRIES_SETTING_KEY = 'duplicateentries'

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.addtoplaylist" name="Add to Playlist" version="0.1.0" provider-name="gewton">
+<addon id="script.addtoplaylist" name="Add to Playlist" version="1.0.0" provider-name="gewton">
 	<requires>
-		<import addon="xbmc.addon" version="15.0.0" />
-		<import addon="xbmc.python" version="2.20.0" />
+		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
 	<extension point="kodi.context.item" library="python/context.py">

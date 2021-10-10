@@ -1,9 +1,6 @@
-import re, os, sys
-import xbmc, xbmcvfs, xbmcaddon
-addon = xbmcaddon.Addon()
-addonpath = xbmc.translatePath(addon.getAddonInfo('path')).decode('utf-8')
-sys.path.append(os.path.join(addonpath, u'python', u'lib'))
-from pykodi import log
+import re
+import xbmc, xbmcvfs
+from lib.pykodi import log
 
 class FileManager(object):
     def _read_file(self, file_name):
@@ -16,7 +13,7 @@ class FileManager(object):
                 f.close()
 
     def _get_list(self, address):
-        return self._read_file(address.decode('utf-8'))
+        return self._read_file(address)
 
     @staticmethod
     def supports(filename):
@@ -30,7 +27,7 @@ class M3uFileManager(FileManager):
     def load_playlist(self, url):
         raw_file_contents = self._get_list(url)
         matches = re.compile('^#EXTINF:-?[0-9]*(.*?),([^\"]*?)\n(.*?)$', re.M).findall(raw_file_contents)
-        return [PlaylistItem(display_name.strip().decode('utf-8', 'ignore'), url.strip()) for params, display_name, url in matches]
+        return [PlaylistItem(display_name.strip(), url.strip()) for params, display_name, url in matches]
 
     def save_playlist(self, playlist, playlist_items):
         filename = playlist.file

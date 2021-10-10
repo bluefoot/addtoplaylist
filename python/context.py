@@ -1,4 +1,9 @@
+import sys
 import addtoplaylist
 
 if __name__ == '__main__':
-    addtoplaylist.add_to_playlist(sys.listitem.getfilename(), sys.listitem.getLabel())
+    path = sys.listitem.getPath()
+    label = sys.listitem.getLabel()
+
+    if path and label:
+        addtoplaylist.add_to_playlist(path, label)
