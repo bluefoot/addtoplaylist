@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.addtoplaylist" name="Add to Playlist" version="1.0.1" provider-name="gewton">
+<addon id="script.addtoplaylist" name="Add to Playlist" version="1.0.2" provider-name="gewton">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -15,7 +15,10 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Adds selected item to a playlist.</summary>
 		<description lang="en">This add-on can add selected items to a user-defined playlist while you are browsing your library.</description>
-		<news>v1.0.1 (2021-10-10)
+		<news>v1.0.2 (2022-11-27)
+- Saves full path in playlist instead of internal URL reference.
+- Better label saved on playlist ("actual title" or "tv show title - actual title").
+        v1.0.1 (2021-10-10)
 - Kodi 19 Matrix upgrade compatible. Breaks compatibility with previous versions of Kodi.</news>
 		<platform>all</platform>
 		<source>https://github.com/bluefoot/script.addtoplaylist</source>
